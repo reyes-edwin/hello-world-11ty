@@ -1,0 +1,31 @@
+<p>Initially, I only knew three things when I started web development: HTML, CSS, and Js. Now there are hundreds of libraries and frameworks to choose from. If you're new to web components, you're at the right place. In this tutorial, I will show you how to build a simple web component using the Lit library.</p>
+<h2>First thing first.... What are web components?</h2>
+<p>A Web Component is a collection of web platform APIs that can be used to create custom, reusable HTML tags that can be used in web pages and web apps. <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Learn more</a></p>
+<p>Web components are based on existing web standards. The features needed to support web components are currently being implemented to the HTML and DOM specs, allowing developers to extend HTML elements with encapsulated styling and custom behavior.</p>
+<h2>Software Installation</h2>
+<p>Before we get started, you first will need to install some tools.</p>
+<p><a href="https://nodejs.org/en/">Node.js</a> is an open-source, cross-platform run time environment for executing javascript code. Due to its event-driven, non-blocking I/O model, Node.js is lightweight and efficient, making it ideal for data-intensive real-time applications to run across multiple devices. When you also install Node, you install NPM. NPM is a &quot;package manager&quot; that simplifies and speeds up the installation of Node &quot;packages.&quot; A package, also called a module, is just a code library that extends Node by adding useful features.</p>
+<p>Once you arrive at the site, you'll want to download the recommended file. To test if node is installed, open up your terminal, type in node on the command line, and hit enter. A welcome text with the latest version of node should appear.</p>
+<p>If you get a message saying <code>zsh: command not found: node</code> retry downloading Node again. In case you still have trouble installing Node, please refer to this <a href="https://nodesource.com/blog/installing-nodejs-tutorial-mac-os-x/">article</a>.</p>
+<p><a href="https://classic.yarnpkg.com/en/docs/install#mac-stable" title="Yarn installation">Yarn</a> is a package manager for your code, enabling you to share and use (e.g. JavaScript) code with other developers. To install Yarn, open up your terminal and type <code>npm install --global yarn</code>. Once installed, run <code>yarn -v</code>, and the latest yarn version should display.</p>
+<p>Once these tools have been installed successfully, we can begin building our first web component.</p>
+<h2>Getting Started</h2>
+<ol>
+<li>Start by creating an empty folder and naming it what you like.</li>
+<li>Inside the directory you just created run <code>npm init @open-wc</code>. We will use Open Web Components to get started. You can learn more about it <a href="https://open-wc.org/docs/">here</a>.</li>
+<li>Next, you'll want to start a new scaffold project. Simply hover over it and press
+<code>enter</code> and <strong>select web component</strong>.</li>
+<li>Next you'll want to select all available options. You can do this by pressing <code>a</code> and hitting <code>enter</code>.</li>
+<li>The next question prompts you if you &quot;would like to use typescript?&quot; We are going to select <strong>no</strong>. The next step is to give our web component a name. <strong>Note:</strong> You need a minimum of two lowercase words separated by dashes—for example, <code>hello-world</code>.</li>
+<li>Next, we will select &quot;yes&quot; for our file structure and install all of our dependencies with <strong>Yarn</strong>. If you weren't successful installing Yarn, you could use <strong>NPM</strong> instead. After a few seconds, all of your dependencies should be installed, and a message saying, &quot;You are all set up now!&quot; would display.</li>
+</ol>
+<p>Congratulations!! You have successfully created your first web component. To launch the site, first, you need to make sure you are inside the directory of the web component you just named. You can do this by typing <code>ls</code> and then <code>cd</code> into the folder. Once inside the directory, you need to run <code>yarn start</code> or <code>npm run start</code>.</p>
+<p>A website would launch every time you start your web component. To terminate the application, press <code>[control] + c</code>.</p>
+<p>If you have trouble completing the steps above, I recommend watching this <a href="https://www.youtube.com/watch?v=r_mio0e6v1g">video</a> of my professor walking through the installation process.</p>
+<h2>Next Steps?</h2>
+<p>Now that you have created your first web component, I recommend you practice and understand the code under the <code>/src file</code>.</p>
+<p>First, you'll notice the import statement at the top of your javascript file. Here we import the HTML, CSS template literal tags that can be used and rendered with Lit Elements. The Lit element is the base class that manages element properties and attributes.</p>
+<p>You might be wondering what the hell is Lit? <a href="https://lit.dev/docs/">Lit</a> is a simple library for building fast, lightweight web components. With its boilerplate-killing component base class, it offers reactive state, scoped styles, and a declarative template system. You can build just about any type of web interface with Lit.</p>
+<p>In the meantime, you can check out Lit's interactive <a href="https://lit.dev/tutorial/">tutorial</a> on how easy and fast it is to build fast, lightweight web components.</p>
+<p>Also, check out <a href="https://lit.dev/playground/">Lit's playground</a>, where you can view and play around with different elements. I recommend you try to resemble the component example; it's simple and an excellent start for beginners. Check out my <a href="https://github.com/reyes-edwin/IST402_Lab-1">repository</a> and see how I did.</p>
+<p>Now that you know how to build your first web component keep exploring! The more you practice, the better you get at it. So happy coding!</p>
